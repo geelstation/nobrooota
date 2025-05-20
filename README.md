@@ -9,7 +9,11 @@ A modern developer landing page built with Flask and modern animations.
 - Responsive layout
 
 ## Setup
-1. Clone the repository
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/geelstation/nobrooota.git
+   cd nobrooota
+   ```
 2. Install dependencies: `pip install -r requirements.txt`
 3. Run the app: `python app.py`
 
@@ -18,3 +22,6 @@ A modern developer landing page built with Flask and modern animations.
 - HTML5/CSS3
 - Animate.css
 - Modern fonts (Fira Code, Inter)
+
+## Author
+- [@geelstation](https://github.com/geelstation)

@@ -1,6 +1,6 @@
-# Nobrota
+# nobrooota
 
-A modern developer landing page built with Flask and modern animations.
+A modern Flask web application with animations and developer-focused design.
 
 ## Features
 - Single page landing

@@ -1,0 +1,135 @@
+:root {
+    --primary: #2563eb;
+    --secondary: #1e293b;
+    --text: #e2e8f0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    color: var(--text);
+    min-height: 100vh;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.error-page {
+    text-align: center;
+    padding: 2rem;
+}
+
+.error-page h1 {
+    color: #ff4444;
+    margin-bottom: 1rem;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.code-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 28px,
+        #2563eb 28px,
+        #2563eb 29px
+    );
+    animation: scroll 20s linear infinite;
+}
+
+.content {
+    text-align: center;
+    z-index: 1;
+    padding: 2rem;
+}
+
+h1 {
+    font-family: 'Fira Code', monospace;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.tag {
+    color: var(--primary);
+}
+
+.typing-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    border-right: 2px solid var(--primary);
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+.btn.primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn.secondary {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.logo {
+    font-family: 'Fira Code', monospace;
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--primary) }
+}
+
+@keyframes scroll {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
+}

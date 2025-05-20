@@ -1,0 +1,3 @@
+class Config:
+    # ...existing configuration from flask-website/config.py...
+    pass
